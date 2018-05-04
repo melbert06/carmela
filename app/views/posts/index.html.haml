@@ -4,8 +4,8 @@
  %li{:class => "nav-item"}= link_to 'new Post',new_post_path ,:class => "nav-link"
  %li= link_to 'My Post',messages_path
  %li= link_to 'Logout', destroy_user_session_path, method: :delete
-%h1 Freedom Wall
-%div{:class => "container"}
+%h1 Carmela's Forum
+%div{:class => "container alert alert-success"}
  -  @post.each do |post|
   %h2= post.title 
   %p= post.content
